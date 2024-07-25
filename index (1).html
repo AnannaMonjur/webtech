@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrow Book</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 15px">Borrow Book</h1>
+    <div style="display: flex; flex-direction: column; align-items: center; border-bottom: 15px;">
+        <div style="margin: 5px; display: flex; gap: 15px;">
+            <div style="width: 180px; height: 380px;">
+                <img src="images/atlas_shrugged.jpeg" alt="Atlas Shrugged" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">Atlas Shrugged</p>
+                <p>Status: Borrowed</p>
+            </div>
+            <div style="width: 180px; height: 380px;">
+                <img src="images/charles_stross.jpeg" alt="Rule 34" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">Rule 34</p>
+                <p>Status: Available</p>
+            </div>
+            <div style="width: 180px; height: 380px;">
+                <img src="images/hitchhiker.jpeg" alt="The Hitchhiker's Guide to the Galaxy" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">The Hitchhiker's Guide to the Galaxy</p>
+                <p>Status: Available</p>
+            </div>
+        </div>
+        <div style="margin: 5px; display: flex; gap: 15px;">
+            <div style="width: 180px; height: 380px;">
+                <img src="images/the_alchemist.jpeg" alt="The Alchemist" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">The Alchemist</p>
+                <p>Status: Borrowed</p>
+            </div>
+            <div style="width: 180px; height: 380px;">
+                <img src="images/the_future.jpeg" alt="The Future is Faster Than You Think" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">The Future is Faster Than You Think</p>
+                <p>Status: Borrowed</p>
+            </div>
+            <div style="width: 180px; height: 380px;">
+                <img src="images/the_labirynth_index.jpeg" alt="The Labyrinth Index" style="width: 180px; height: 280px; object-fit: fill;" />
+                <p style="overflow-wrap: break-word;">The Labyrinth Index</p>
+                <p>Status: Available</p>
+            </div>
+        </div>
+        <form action="process.php" method="post" style="margin: 15px;">
+            <label for="sname">Name</label><br>
+            <input type="text" name="sname" required style="margin-bottom: 5px;"><br>
+            <label for="sid">ID</label><br>
+            <input type="text" name="sid" required style="margin-bottom: 5px;"><br>
+            <label for="btitle">Book Title</label><br>
+            <input type="text" name="btitle" required style="margin-bottom: 5px;"><br>
+            <label for="exp-date">Exp Date</label><br>
+            <input type="date" name="expDate" required style="margin-bottom: 10px;"><br>
+            <input type="submit" name="submit" value="Submit" style="width: 100px; height: 30px;">
+        </form>
+    </div>
+</body>
+
+</html>
